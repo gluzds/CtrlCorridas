@@ -1,7 +1,12 @@
-package com.bcopstein.CtrlCorredorV1;
+package com.bcopstein.ctrlcorredor_v7_CLEAN.negocio.entidades;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Evento {
-    private int id;
+    @Id
+    private Long id;
     private String nome;
     // Data do evento
     private int dia;
@@ -14,7 +19,7 @@ public class Evento {
     private int minutos;
     private int segundos;
     
-    public Evento(int id,String nome, int dia, int mes, int ano, int distancia, int horas, int minutos, int segundos) {
+    public Evento(Long id,String nome, int dia, int mes, int ano, int distancia, int horas, int minutos, int segundos) {
         this.id = id;
         this.nome = nome;
         this.dia = dia;
@@ -26,7 +31,11 @@ public class Evento {
         this.segundos = segundos;
     }
 
-    public int getId() {
+    protected Evento(){
+        
+    }
+
+    public Long getId() {
         return id;
     }
 

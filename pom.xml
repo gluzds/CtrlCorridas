@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.bcopstein</groupId>
-	<artifactId>CtrlCorredorV1</artifactId>
+	<artifactId>ctrlcorredor_v7_CLEAN</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>CtrlCorredorV1</name>
+	<name>ctrlcorredor_v7_CLEAN</name>
 	<description>Projeto introdutório arquitetura</description>
 	<properties>
 		<java.version>15</java.version>
@@ -41,6 +41,17 @@
 			<artifactId>lombok</artifactId>
 			<version>1.18.18</version>
 			<scope>provided</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.persistence/javax.persistence-api -->
+		<dependency>
+			<groupId>javax.persistence</groupId>
+			<artifactId>javax.persistence-api</artifactId>
+			<version>2.2</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 	</dependencies>
 

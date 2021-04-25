@@ -1,6 +1,11 @@
-package com.bcopstein.CtrlCorredorV1;
+package com.bcopstein.ctrlcorredor_v7_CLEAN.negocio.entidades;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Corredor {
+    @Id
     private String cpf;
     private String nome;
     private int diaDn,mesDn,anoDn;
@@ -13,6 +18,10 @@ public class Corredor {
         this.mesDn = mesDn;
         this.anoDn = anoDn;
         this.genero = genero;
+    }
+    
+    protected Corredor(){
+        
     }
 
     public String getCpf() {
